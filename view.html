@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>GPT-GALLERY</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuD3KpZIJ_P9hjAfv-r-PJaAaF1N-VMaculNBOaJTt44CkSxn6">
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="8/ninja-slider.css" rel="stylesheet" type="text/css" />
+    <script src="8/ninja-slider.js" type="text/javascript"></script>
+    <script>
+        function lightbox(idx) {
+            //show the slider's wrapper: this is required when the transitionType has been set to "slide" in the ninja-slider.js
+            var ninjaSldr = document.getElementById("ninja-slider");
+            ninjaSldr.parentNode.style.display = "block";
+
+            nslider.init(idx);
+
+            var fsBtn = document.getElementById("fsBtn");
+            fsBtn.click();
+        }
+
+        function fsIconClick(isFullscreen, ninjaSldr) { //fsIconClick is the default event handler of the fullscreen button
+            if (isFullscreen) {
+                ninjaSldr.parentNode.style.display = "none";
+                window.open("view.html","_self");
+
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+  width: 10px;
+ 
+}
+/* Track */
+::-webkit-scrollbar-track {
+   
+  
+  background-color: rgba(0,0,0,.5);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+  background: #aaa;
+}
+html
+{
+    overflow: hidden;
+}
+       
+        #ninja-slider ul li {padding: 10px 0;}
+       #ninja-slider ul li .caption
+       {
+            margin-top: 20px;
+       }
+        .gallery-view img{
+            width:150px;
+            height: 150px;
+            cursor:pointer;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .fs-icon:hover
+        {
+            color: red;
+        }
+        @keyframes animate-gallery
+        {
+            0%
+            {
+                transform: scale(0);
+            }
+            100%
+            {
+                transform: scale(1);
+                transition: .5s;
+            }
+        }
+@keyframes backtohome
+{
+    0%
+    {
+        margin-top: -40px;
+        opacity: 0;
+    }
+    100%
+    {
+        margin-top: 0px;
+    }
+}  /* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(bg/pre1.gif) center no-repeat #fff;
+}
+    </style>
+</head>
+<body style="background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,.8)),url(bg.gif);overflow: hidden;background-attachment: fixed;background-position: fixed;" >
+
+<div class="se-pre-con"></div>
+
+<div style="position: absolute;left: 92%;top: 20px;color: white;animation: backtohome 1s;"> <a href="vinay.php" style="text-decoration: none;border: none;outline: none;font-weight: bold;font-size: 16px;font-family: arial;"><i class="fa fa-arrow-circle-left"></i> Back to <i class="fa fa-home"></i></a></div>
+ 
+    <!--start-->
+    <div style="display:none;animation: animate-gallery .5s;">
+        <div id="ninja-slider">
+            <div class="slider-inner">
+                <ul>
+                    <li>
+                        <a class="ns-img" href="gallery/1.jpg"></a>
+                        <div class="caption">
+                            <h3>College</h3>
+                            <p>Front view</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="gallery/2.jpg"></a>
+                        <div class="caption">
+                            <h3>Sports</h3>
+                            <p>Students achieved medals in sports</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="gallery/3.jpg"></a>
+                        <div class="caption">
+                            <h3>Chemistry Lab</h3>
+                            <p>Students are going to have their practicals in this lab</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="gallery/4.jpg"></a>
+                        <div class="caption">
+                            <h3>Something</h3>
+                            <p> </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="gallery/5.jpg"></a>
+                        <div class="caption">
+                            <h3>CME</h3>
+                            <p> </p>
+                        </div>
+                    </li>
+                     <li>
+                        <a class="ns-img" href="gallery/6.jpg"></a>
+                        <div class="caption">
+                            <h3>Meeting</h3>
+                            <p> </p>
+                        </div>
+                    </li>
+                     <li>
+                        <a class="ns-img" href="gallery/7.jpg"></a>
+                        <div class="caption">
+                            <h3>Cleaning</h3>
+                            <p> </p>
+                        </div>
+                    </li>
+                     <li>
+                        <a class="ns-img" href="gallery/8.jpg"></a>
+                        <div class="caption">
+                            <h3>Gift</h3>
+                            <p> </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="gallery/9.jpeg"></a>
+                        <div class="caption">
+                            <h3>Counselling</h3>
+                            <p> </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="gallery/10.jpg"></a>
+                        <div class="caption">
+                            <h3>CME Freshers</h3>
+                            <p>Final Year 2nd shift students</p>
+                        </div>
+                    </li>
+                </ul>
+                <div id="fsBtn" class="fs-icon" title="Close"></div>
+            </div>
+        </div>
+    </div>
+    <div style="width:1010px;height: 450px; margin:90px auto;border: 1px solid rgb(255,255,255);background: rgba(255,255,255,.2);padding: 20px;overflow: auto;">
+        <h2 style="text-align: center;font-size: 28px;font-weight: 100;color: white;"><i class="fa fa-image"></i> GPT_MASB Gallery</h2>
+        <hr>
+        <br /><br />
+        <div class="gallery-view"> &ensp;         
+            <img src="gallery/1.jpg" onclick="lightbox(0)" />&ensp;&nbsp;
+            <img src="gallery/2.jpg" onclick="lightbox(1)" />&ensp;&nbsp;
+            <img src="gallery/3.jpg" onclick="lightbox(2)" />&ensp;&nbsp;
+            <img src="gallery/4.jpg" onclick="lightbox(3)" />&ensp;&nbsp;
+            <img src="gallery/5.jpg" onclick="lightbox(4)" />&ensp;&nbsp;
+            <img src="gallery/6.jpg" onclick="lightbox(5)" /><br><br>
+            &ensp;
+            <img src="gallery/7.jpg" onclick="lightbox(6)" />&ensp;&nbsp;
+            <img src="gallery/8.jpg" onclick="lightbox(7)" />&ensp;&nbsp;
+            <img src="gallery/9.jpeg" onclick="lightbox(8)" />&ensp;&nbsp;
+            <img src="gallery/10.jpg" onclick="lightbox(9)" />&ensp;&nbsp;
+
+        </div>
+    </div>
+   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+<script type="text/javascript">
+  //paste this code under the head tag or in a separate js file.
+  // Wait for window load
+  $(window).load(function() {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");;
+  });
+</script>
+</body>
+</html>
